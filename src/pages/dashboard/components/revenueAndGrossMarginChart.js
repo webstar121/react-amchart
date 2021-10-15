@@ -56,8 +56,8 @@ const RevenueAndGrossMarginChart = () => {
 
   return (
     <OAChartWrapper className={classes.root}>
-      {!(revenueLoading || grossMarginLoading) && <OAColumnLineChartSkeleton />}
-      {(revenueLoading || grossMarginLoading) && (
+      {(revenueLoading || grossMarginLoading) && <OAColumnLineChartSkeleton />}
+      {!(revenueLoading || grossMarginLoading) && (
         <OAColumnLineChart
           data={chartData}
           title={title}
